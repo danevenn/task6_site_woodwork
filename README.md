@@ -2,7 +2,9 @@
 
 Sitio web corporativo de una carpintería artesanal, construido como práctica de la fase 6 del módulo DAW (curso 2025/26).
 
-**Demo en producción:** _por desplegar en Vercel_
+**Demo en producción:** https://task6-site-woodwork.vercel.app
+
+**Repositorio:** https://github.com/danevenn/task6_site_woodwork
 
 ## Stack
 

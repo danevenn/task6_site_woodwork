@@ -24,7 +24,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://carpinteria-los-artesanos.vercel.app"),
+  metadataBase: new URL("https://task6-site-woodwork.vercel.app"),
   title: {
     default: "Carpintería Los Artesanos — Muebles a medida y restauración",
     template: "%s · Carpintería Los Artesanos",

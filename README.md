@@ -1,6 +1,6 @@
 # Carpintería Los Artesanos · Task6 — Sitio Corporativo Next.js
 
-Sitio web corporativo de una carpintería artesanal, construido como práctica de la fase 6 del módulo DAW (curso 2025/26).
+Sitio web corporativo de una carpintería artesanal, construido como práctica de la fase 6.
 
 **Demo en producción:** https://task6-site-woodwork.vercel.app
 

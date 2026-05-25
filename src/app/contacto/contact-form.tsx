@@ -2,6 +2,7 @@
 
 import { useActionState, useEffect, useRef } from "react";
 import { useFormStatus } from "react-dom";
+import { motion } from "motion/react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -11,13 +12,19 @@ import {
   submitContactForm,
   type ContactFormState,
 } from "@/app/contacto/actions";
+import { fadeUp, onceInView, staggerContainer } from "@/lib/motion";
 
 const INITIAL: ContactFormState = { status: "idle" };
 
 function SubmitButton() {
   const { pending } = useFormStatus();
   return (
-    <Button type="submit" size="lg" disabled={pending} className="w-full sm:w-auto">
+    <Button
+      type="submit"
+      size="lg"
+      disabled={pending}
+      className="w-full sm:w-auto"
+    >
       {pending ? "Enviando…" : "Enviar mensaje"}
     </Button>
   );
@@ -37,14 +44,18 @@ export function ContactForm() {
   }, [state]);
 
   return (
-    <form
+    <motion.form
       ref={formRef}
       action={formAction}
       noValidate
       className="grid gap-5"
       aria-describedby="form-status"
+      initial="hidden"
+      whileInView="visible"
+      viewport={onceInView}
+      variants={staggerContainer}
     >
-      <div className="grid gap-2">
+      <motion.div variants={fadeUp} className="grid gap-2">
         <Label htmlFor="name">Nombre completo *</Label>
         <Input
           id="name"
@@ -59,9 +70,9 @@ export function ContactForm() {
             {state.errors.name[0]}
           </p>
         )}
-      </div>
+      </motion.div>
 
-      <div className="grid gap-5 sm:grid-cols-2">
+      <motion.div variants={fadeUp} className="grid gap-5 sm:grid-cols-2">
         <div className="grid gap-2">
           <Label htmlFor="email">Email *</Label>
           <Input
@@ -90,9 +101,9 @@ export function ContactForm() {
             aria-invalid={!!state.errors?.phone}
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="grid gap-2">
+      <motion.div variants={fadeUp} className="grid gap-2">
         <Label htmlFor="message">Mensaje *</Label>
         <Textarea
           id="message"
@@ -108,16 +119,19 @@ export function ContactForm() {
             {state.errors.message[0]}
           </p>
         )}
-      </div>
+      </motion.div>
 
-      <div className="flex flex-wrap items-center gap-4">
+      <motion.div
+        variants={fadeUp}
+        className="flex flex-wrap items-center gap-4"
+      >
         <SubmitButton />
         {state.status === "success" && (
           <p id="form-status" role="status" className="text-sm text-accent">
             {state.message}
           </p>
         )}
-      </div>
-    </form>
+      </motion.div>
+    </motion.form>
   );
 }

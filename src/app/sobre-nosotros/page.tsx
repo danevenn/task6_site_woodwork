@@ -44,11 +44,11 @@ const WORKSHOP_IMAGES = [
     alt: "Banco de trabajo con cepillos y formones de carpintería",
   },
   {
-    src: "https://images.unsplash.com/photo-1572297870735-cf302d4a6e2e?auto=format&fit=crop&w=1200&q=80",
+    src: "https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?auto=format&fit=crop&w=1200&q=80",
     alt: "Detalle de virutas de madera tras un cepillado manual",
   },
   {
-    src: "https://images.unsplash.com/photo-1611025469259-0c2b7060eef2?auto=format&fit=crop&w=1200&q=80",
+    src: "https://images.unsplash.com/photo-1574359411659-15573a27fd0c?auto=format&fit=crop&w=1200&q=80",
     alt: "Tablas de roble apiladas en el almacén del taller",
   },
   {

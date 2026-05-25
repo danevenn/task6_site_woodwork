@@ -276,10 +276,10 @@ const PROJECTS: Project[] = [
     description:
       "Pieza familiar firmada por el taller barcelonés Busquets en 1908, heredada durante cuatro generaciones. Llegó al taller con tres piezas de marquetería desprendidas, un travesaño inferior comido por carcoma activa y la goma laca original prácticamente desaparecida tras un intento previo de barnizado con tinte.\n\nLa primera fase consistió en un tratamiento curativo de carcoma con permetrina inyectada y posterior cuarentena de seis semanas en cámara seca a 22 °C. Confirmada la erradicación, se procedió al decapado manual de los restos de barniz moderno con muñequilla de alcohol etílico al 96 %, evitando cualquier producto químico agresivo que pudiera dañar la marquetería original de palosanto y limoncillo.\n\nLas tres piezas de marquetería perdidas se reconstruyeron a partir de fotografías de archivo familiar y de un catálogo del taller Busquets conservado en el MNAC. El palosanto se obtuvo de un piano vertical Erard de 1890 desguazado, garantizando un envejecimiento cromático coherente con el resto del mueble.\n\nEl acabado se devolvió con goma laca aplicada a muñequilla en seis manos, frotando con aceite de linaza entre la cuarta y la quinta para conseguir la profundidad típica del barniz francés. Los herrajes de bronce se limpiaron con bicarbonato y se protegieron con cera microcristalina, conservando la pátina.",
     image:
-      "https://images.unsplash.com/photo-1505692794403-34d4982f88aa?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=1600&q=80",
     blurDataURL: BLUR,
     gallery: [
-      "https://images.unsplash.com/photo-1505692794403-34d4982f88aa?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=1600&q=80",
       "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1600&q=80",
     ],
     materials: [
